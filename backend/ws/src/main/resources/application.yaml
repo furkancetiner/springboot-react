@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:h2:./devdb
+    username: sa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      javax:
+        persistence:
+          validation:
+            mode: none
+  data:
+     web:
+       pageable:
+        page-parameter: currentPage
+        size-parameter: pageSize
+ 
+logging:
+  level:
+    org.springframework: DEBUG
